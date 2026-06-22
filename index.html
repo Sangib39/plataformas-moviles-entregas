@@ -8,111 +8,182 @@
     
     <style>
         body {
-            background-color: #003087 !important; /* Azul Rey Xeneize */
-            color: #FFB81C; /* Oro */
-            font-family: 'Impact', 'Arial Black', sans-serif;
-        }
-        .container-boca {
-            max-width: 600px;
-            margin: 30px auto;
-            background: rgba(0, 20, 60, 0.8);
-            padding: 30px;
-            border-radius: 15px;
-            border: 5px solid #FFB81C; /* Borde de Oro */
-            box-shadow: 0px 0px 20px rgba(255, 184, 28, 0.5);
-        }
-        .list-group-item-boca {
-            background-color: #003087 !important;
-            border: 2px solid #FFB81C !important;
-            margin-bottom: 8px;
-            border-radius: 8px !important;
-            transition: transform 0.2s;
-        }
-        .list-group-item-boca:hover {
-            transform: scale(1.03);
-            background-color: #FFB81C !important;
-        }
-        .list-group-item-boca a {
-            color: #FFB81C !important;
-            text-decoration: none;
-            display: block;
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding: 10px;
-        }
-        .list-group-item-boca:hover a {
-            color: #003087 !important;
-        }
-        h1.titulo-final {
+            background-color: #0d1b3e; /* Fondo azul oscuro profundo */
             color: #FFB81C;
-            text-shadow: 3px 3px 0px #000;
-            background: #FFB81C;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 50px;
+        }
+        
+        /* Contenedor principal con más espacio */
+        .la-bombonera {
+            padding-top: 40px;
+        }
+
+        /* Tarjetas de los TPs con diseño de Boca */
+        .tarjeta-tp {
+            background-color: #003087; /* Azul Boca */
+            border: 2px solid #FFB81C; /* Borde de Oro */
+            border-radius: 12px;
+            padding: 20px;
+            height: 100%;
+            display: d-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto cuando pasás el mouse por arriba */
+        .tarjeta-tp:hover {
+            transform: translateY(-5px);
+            background-color: #FFB81C; /* Se vuelve de Oro */
+            box-shadow: 0 8px 25px rgba(255, 184, 28, 0.4);
+        }
+
+        /* Estilo para los enlaces de texto */
+        .tarjeta-tp a {
+            color: #FFB81C;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05rem;
+            display: block;
+            width: 100%;
+        }
+
+        /* Cambia el texto a azul cuando pasás el mouse */
+        .tarjeta-tp:hover a {
             color: #003087;
-            padding: 15px;
-            border-radius: 10px;
+        }
+
+        /* El cartel del GOL final */
+        .festejo-final {
+            background: linear-gradient(90deg, #003087 0%, #FFB81C 50%, #003087 100%);
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            padding: 20px;
+            border-radius: 50px;
+            border: 4px solid #FFB81C;
+            box-shadow: 0 0 30px rgba(255, 184, 28, 0.6);
             display: inline-block;
-            margin-top: 20px;
-            border: 3px solid #fff;
+            font-weight: 900;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container container-boca text-center">
-        <h2 class="mb-4 text-uppercase" style="text-shadow: 2px 2px #000;">★ CABJ - los laburos del santi ,profe aprobame porfa ★</h2>
+    <div class="container la-bombonera">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-uppercase" style="color: #FFB81C; text-shadow: 3px 3px 0px #003087;">
+                ★ Xeneize - Panel de Control ★
+            </h1>
+            <p class="text-muted text-warning-emphasis">Todos los trabajos prácticos ordenados y al día</p>
+        </div>
         
-        <div class="text-start">
-            <div class="list-group-item-boca">
-                <a href="tp-1/">Trabajo Practico 1</a>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-1/">Trabajo Practico 1</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-2/">Trabajo Practico 2</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-2/">Trabajo Practico 2</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-3/">Trabajo Practico 3</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-3/">Trabajo Practico 3</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-4/">Trabajo Practico 4</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-4/">Trabajo Practico 4</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-5/">Trabajo Practico 5</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-5/">Trabajo Practico 5</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-6/">Trabajo Practico 6 q crack soy</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-6/">Trabajo Practico 6 q crack soy</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-7/">Trabajo Practico 7 oa</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-7/">Trabajo Practico 7 oa</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-8/">Trabajo Practico 8 XD</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-8/">Trabajo Practico 8 XD</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-9/">Trabajo Practico 9 listas  :V</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-9/">Trabajo Practico 9 listas  :V</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-10/">Trabajo Practico 10 objetardos  BV</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-10/">Trabajo Practico 10 objetardos  BV</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-11/">Trabajo Practico 11 objetardos y listardopolis  afaerte</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-11/">Trabajo Practico 11 objetardos y listardopolis  afaerte</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-12/">Trabajo Practico 12 edithor de sexo digo de texto jajaj</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-12/">Trabajo Practico 12 edithor de sexo digo de texto jajaj</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-13/">Trabajo Practico 13 lista de compras con DOOM terrenos dificiles de la materia</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-13/">Trabajo Practico 13 lista de compras con DOOM terrenos dificiles de la materia</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-14/">Trabajo Practico 14 lisa de contacto</a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-14/">Trabajo Practico 14 lisa de contacto</a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-15/">Trabajo Practico 15 contador de fulbo pibe </a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-15/">Trabajo Practico 15 contador de fulbo pibe </a>
+                </div>
             </div>
-            <div class="list-group-item-boca">
-                <a href="tp-16/">Trabajo Practico 16 comida,appi estres y fin de la materia </a>
+            
+            <div class="col">
+                <div class="tarjeta-tp">
+                    <a href="tp-16/">Trabajo Practico 16 comida,appi estres y fin de la materia </a>
+                </div>
             </div>
+
         </div>
 
-        <center><h1 class="titulo-final">por fin termineeee GOOOL</h1></center>
+        <div class="text-center mt-5 pt-4">
+            <h1 class="festejo-final px-5 py-3">⚽ por fin termineeee GOOOL ⚽</h1>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
