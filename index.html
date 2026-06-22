@@ -7,39 +7,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <style>
-        /* --- DISEÑO DE LOCURA POR CSS NATIVO --- */
+        /* --- ESTILOS 100% XENEIZES --- */
         :root {
-            --fondo: #0f172a; /* Fondo oscuro moderno (Slate 900) */
-            --tarjeta-fondo: #1e293b; /* Gris azulado oscuro para las cards */
-            --texto-principal: #f8fafc;
-            --texto-secundario: #94a3b8;
-            --borde-hover: #38bdf8; /* Celeste brillante al pasar el mouse */
-            --sombra: rgba(0, 0, 0, 0.4);
+            --boca-azul-fondo: #0a1931;  /* Azul oscuro para el fondo general */
+            --boca-azul-card: #15305b;   /* Azul bien marcado para las tarjetas */
+            --boca-oro: #ffc93c;         /* El verdadero Amarillo Oro de Boca */
+            --texto-blanco: #f8fafc;
+            --texto-gris: #94a3b8;
+            --sombra: rgba(0, 0, 0, 0.5);
         }
 
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--fondo);
-            color: var(--texto-principal);
+            background-color: var(--boca-azul-fondo);
+            color: var(--texto-blanco);
             min-height: 100vh;
             padding: 40px 20px;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            font-size: 2.8rem;
+            font-weight: 900;
             letter-spacing: -0.05em;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
+            /* Degradado con los colores de la pasión */
+            background: linear-gradient(to right, var(--boca-oro), #ff9f1a, var(--boca-oro));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
         }
 
         header p {
-            color: var(--texto-secundario);
+            color: var(--texto-gris);
             font-size: 1.1rem;
+            font-weight: 500;
         }
 
-        /* Rejilla inteligente: mete hasta 3 columnas y se adapta sola a celular */
+        /* Grilla para ordenar los TPs en columnas */
         .grid-tps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -47,53 +50,55 @@
             margin-top: 30px;
         }
 
-        /* Convertimos tus enlaces <a> en hermosas tarjetas */
+        /* Tus enlaces convertidos en tremendas tarjetas de Boca */
         .grid-tps a {
-            background-color: var(--tarjeta-fondo);
-            color: var(--texto-principal);
+            background-color: var(--boca-azul-card);
+            color: var(--texto-blanco);
             padding: 25px;
             border-radius: 16px;
-            text-decoration: none; /* Chau la línea fea de abajo */
+            text-decoration: none; /* Chau línea de abajo */
             font-size: 1.1rem;
             font-weight: 600;
-            box-shadow: 0 4px 10px var(--sombra);
-            border: 1px solid #334155;
+            box-shadow: 0 4px 15px var(--sombra);
+            /* Borde izquierdo grueso simulando la franja amarilla */
+            border: 1px solid #1e3d6b;
+            border-left: 6px solid var(--boca-oro); 
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            position: relative;
-            overflow: hidden;
         }
 
-        /* El efecto Hover que se va a notar una banda */
+        /* Efecto cuando pasás el mouse (Se enciende la mitad más uno) */
         .grid-tps a:hover {
-            transform: translateY(-6px); /* Se eleva */
-            border-color: var(--borde-hover); /* Se ilumina el borde */
-            box-shadow: 0 12px 24px rgba(56, 189, 248, 0.15); /* Brillo sutil azul */
+            transform: translateY(-6px); /* Se eleva la tarjeta */
+            border-color: var(--boca-oro); /* El borde se vuelve todo dorado */
+            box-shadow: 0 12px 24px rgba(255, 201, 60, 0.2); /* Brillo amarillo de fondo */
+            background-color: #1a3c73; /* Se aclara un toque el azul */
         }
 
-        /* Un detalle para simular una descripción adentro de la tarjeta */
+        /* Texto de acción abajo de cada TP */
         .grid-tps a::after {
-            content: "Abrir proyecto →";
+            content: "aprovame profe por favor →";
             font-size: 0.85rem;
-            color: var(--texto-secundario);
+            color: var(--texto-gris);
             margin-top: 15px;
             font-weight: 400;
             transition: color 0.25s ease;
         }
 
         .grid-tps a:hover::after {
-            color: var(--borde-hover);
+            color: var(--boca-oro);
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="container max-width: 1000px;">
+    <div class="container" style="max-width: 1000px;">
         <header class="text-center mb-5">
-            <h1>Mis Trabajos Prácticos</h1>
-            <p>Laboratorio de Computación & Desarrollo Web</p>
+            <h1>los Trabajos Prácticos de santy y gemini</h1>
+            <p>todo bokitaa | profe aprobame por favor 💙💛💙</p>
         </header>
 
         <div class="grid-tps">
